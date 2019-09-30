@@ -27,10 +27,10 @@ console.log('入力: 14, 期待する結果: false', isOddNumber(14));
 // ここにfactorial関数を作る
 function factorial(number) {
     if(number === 1) {
-        return 1;
-    } else {
-        return number * factorial(number - 1);
+        return number;
     }
+
+    return number * factorial(number - 1);
 }
 
 // ここにconsole.logを使って「4」「5」を引数に渡したときの結果値を出力する
